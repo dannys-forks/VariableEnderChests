@@ -293,6 +293,7 @@ public class EnderChestManager extends Manager<VariableEnderChests> implements L
         } else {
             chest.openInventory(player);
         }
+        player.playSound(player.getLocation(), Sound.BLOCK_ENDER_CHEST_OPEN, 1, 1);
     }
 
     public void openEnderChest(Player player, int rows) {
